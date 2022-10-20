@@ -74,6 +74,27 @@ namespace WindowsLab
                     MessageBox.Show("El área del círculo es: " + areaCirculo);
                     break;
                 case "trapecio":
+                    bool anchoInfConvertido = double.TryParse(Interaction.InputBox("Ingresa el ancho de la base inferior: ", "Carga de datos"), out double anchoInfTrapecio);
+                    while (!anchoInfConvertido)
+                    {
+                        MessageBox.Show("Hubo un error con el número ingresado, intenta nuevamente.");
+                        anchoInfConvertido = double.TryParse(Interaction.InputBox("Ingresa el ancho de la base inferior: ", "Carga de datos"), out anchoInfTrapecio);
+                    }
+                    bool anchoSupConvertido = double.TryParse(Interaction.InputBox("Ingresa el ancho de la base superior: ", "Carga de datos"), out double anchoSupTrapecio);
+                    while (!anchoSupConvertido)
+                    {
+                        MessageBox.Show("Hubo un error con el número ingresado, intenta nuevamente.");
+                        anchoSupConvertido = double.TryParse(Interaction.InputBox("Ingresa el ancho de la base superior: ", "Carga de datos"), out anchoSupTrapecio);
+                    }
+                    bool alturaConvertida = double.TryParse(Interaction.InputBox("Ingresa la altura del trapecio: ", "Carga de datos"), out double altoTrapecio);
+                    while (!alturaConvertida)
+                    {
+                        MessageBox.Show("Hubo un error con el número ingresado, intenta nuevamente.");
+                        alturaConvertida = double.TryParse(Interaction.InputBox("Ingresa la altura del trapecio: ", "Carga de datos"), out altoTrapecio);
+                    }
+                    // Tenemos los datos
+                    double areaTrapecio = ((anchoInfTrapecio + anchoSupTrapecio) * altoTrapecio) / 2;
+                    MessageBox.Show("El área del trapecio es: " + areaTrapecio);
                     break;
             }
         }
