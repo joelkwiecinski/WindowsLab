@@ -21,6 +21,7 @@ namespace WindowsLab
         {
             if (txtNombre.Text != "" && txtApellido.Text != "")
             {
+                imprimir(txtNombre.Text, txtApellido.Text);
                 imprimir(txtNombre.Text, txtApellido.Text, dateFechaNacimiento.Value);
             }
             else
