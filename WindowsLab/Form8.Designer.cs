@@ -1,6 +1,6 @@
 ﻿namespace WindowsLab
 {
-    partial class Form7
+    partial class Form8
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnGenerarInforme = new System.Windows.Forms.Button();
+            this.btnCargar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnGenerarInforme
+            // btnCargar
             // 
-            this.btnGenerarInforme.Location = new System.Drawing.Point(150, 65);
-            this.btnGenerarInforme.Name = "btnGenerarInforme";
-            this.btnGenerarInforme.Size = new System.Drawing.Size(448, 54);
-            this.btnGenerarInforme.TabIndex = 2;
-            this.btnGenerarInforme.Text = "Generar informe de notas";
-            this.btnGenerarInforme.UseVisualStyleBackColor = true;
-            this.btnGenerarInforme.Click += new System.EventHandler(this.btnGenerarInforme_Click);
+            this.btnCargar.Location = new System.Drawing.Point(129, 51);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(266, 77);
+            this.btnCargar.TabIndex = 0;
+            this.btnCargar.Text = "Cargar precios";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
             // 
-            // Form7
+            // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 184);
-            this.Controls.Add(this.btnGenerarInforme);
-            this.Name = "Form7";
-            this.Text = "Form7";
+            this.ClientSize = new System.Drawing.Size(524, 178);
+            this.Controls.Add(this.btnCargar);
+            this.Name = "Form8";
+            this.Text = "Suma de precios";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnGenerarInforme;
+
+        private System.Windows.Forms.Button btnCargar;
     }
 }
